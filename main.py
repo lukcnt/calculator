@@ -1,3 +1,3 @@
-def addition(first_name, second_number):
-    sum = first_name + second_number
+def addition(first_number, second_number):
+    sum = first_number + second_number
     return sum
