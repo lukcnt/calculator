@@ -5,3 +5,7 @@ def addition(first_number, second_number):
 def subtraction(first_number, second_number):
     difference = first_number - second_number
     return difference
+
+def multiplication(first_number, second_number):
+    product = first_number * second_number
+    return product
