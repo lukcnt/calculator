@@ -9,3 +9,7 @@ def subtraction(first_number, second_number):
 def multiplication(first_number, second_number):
     product = first_number * second_number
     return product
+
+def division(first_number, second_number):
+    quotient = first_number / second_number
+    return quotient
