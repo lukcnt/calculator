@@ -20,3 +20,6 @@ operations = {
     "x" : multiplication,
     "/" : division
     }
+
+calculation = input("Write the calculation you want to make: ")
+calculation_list = calculation.split()
