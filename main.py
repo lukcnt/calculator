@@ -13,3 +13,10 @@ def multiplication(first_number, second_number):
 def division(first_number, second_number):
     quotient = first_number / second_number
     return quotient
+
+operations = {
+    "+" : addition,
+    "-" : subtraction,
+    "x" : multiplication,
+    "/" : division
+    }
