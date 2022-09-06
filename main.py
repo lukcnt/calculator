@@ -1,3 +1,5 @@
+import art
+
 def addition(first_number, second_number):
     sum = first_number + second_number
     return sum
@@ -21,5 +23,6 @@ operations = {
     "/" : division
     }
 
+print(art.logo)
 calculation = input("Write the calculation you want to make: ")
 calculation_list = calculation.split()
