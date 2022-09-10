@@ -33,7 +33,12 @@ operations = {
     }
 
 print(art.logo)
-user_arithmetic_calculation = input("Write the calculation you want to make: ")
-calculation_list = user_arithmetic_calculation.split()
-result = calculation(calculation_list)
-print(result)
+keep_running_program = True
+while keep_running_program == True:
+    user_arithmetic_calculation = input("Write the calculation you want to make: ")
+    if user_arithmetic_calculation == "exit":
+        keep_running_program = False
+    else:
+        calculation_list = user_arithmetic_calculation.split()
+        result = calculation(calculation_list)
+        print(result)
