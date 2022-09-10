@@ -16,6 +16,15 @@ def division(first_number, second_number):
     quotient = first_number / second_number
     return quotient
 
+def calculation(calculation_list):
+    first_number = int(calculation_list[0])
+    second_number = int(calculation_list[2])
+    symbol = calculation_list[1]
+    if symbol in operations:
+        calculation_operation = operations[symbol]
+        result = calculation_operation(first_number, second_number)
+    return result
+
 operations = {
     "+" : addition,
     "-" : subtraction,
@@ -24,14 +33,7 @@ operations = {
     }
 
 print(art.logo)
-calculation = input("Write the calculation you want to make: ")
-calculation_list = calculation.split()
-
-if len(calculation_list) == 3:
-    first_number = int(calculation_list[0])
-    second_number = int(calculation_list[2])
-    symbol = calculation_list[1]
-    if symbol in operations:
-        calculation_operation = operations[symbol]
-        result = calculation_operation(first_number, second_number)
-        print(result)
+user_arithmetic_calculation = input("Write the calculation you want to make: ")
+calculation_list = user_arithmetic_calculation.split()
+result = calculation(calculation_list)
+print(result)
