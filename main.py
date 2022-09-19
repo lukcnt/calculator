@@ -2,7 +2,8 @@ import art
 import os
 
 INITIAL_MESSAGE = ("Welcome to the python calculator, to work properly is needed "
-                  "typing spaces between numbers and operator. Example: 20 + 15")
+                  "typing spaces between numbers and operator. Example: 20 + 15\n"
+                  "For more information type 'help'.")
 
 HELP_MESSAGE = ("")
 
