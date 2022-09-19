@@ -8,7 +8,7 @@ INITIAL_MESSAGE = ("Welcome to the python calculator, to work properly is needed
 HELP_MESSAGE = ("\nThe only operations supported at the moment are the following:\n"
                 "-Addition using the symbol '+'\n"
                 "-Subtraction using the symbol '-'\n"
-                "-Multiplication using the letter 'x'\n"
+                "-Multiplication using the letter '*'\n"
                 "-Division using the symbol '/'\n"
                 "\nLastly, if you want to clean the screen write 'clean'")
 
@@ -40,7 +40,7 @@ def calculation(calculation_list):
 operations = {
     "+" : addition,
     "-" : subtraction,
-    "x" : multiplication,
+    "*" : multiplication,
     "/" : division
     }
 
