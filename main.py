@@ -1,4 +1,5 @@
 import art
+import os
 
 def addition(first_number, second_number):
     sum = first_number + second_number
@@ -38,6 +39,9 @@ while keep_running_program == True:
     user_arithmetic_calculation = input("Write the calculation you want to make: ")
     if user_arithmetic_calculation == "exit":
         keep_running_program = False
+    elif user_arithmetic_calculation == "clear":
+        os.system("clear")
+        print(art.logo)
     else:
         calculation_list = user_arithmetic_calculation.split()
         result = calculation(calculation_list)
