@@ -1,6 +1,11 @@
 import art
 import os
 
+INITIAL_MESSAGE = ("Welcome to the python calculator, to work properly is needed "
+                  "typing spaces between numbers and operator. Example: 20 + 15")
+
+HELP_MESSAGE = ("")
+
 def addition(first_number, second_number):
     sum = first_number + second_number
     return sum
@@ -34,6 +39,7 @@ operations = {
     }
 
 print(art.logo)
+print(INITIAL_MESSAGE)
 keep_running_program = True
 while keep_running_program == True:
     user_arithmetic_calculation = input("Write the calculation you want to make: ")
@@ -42,6 +48,7 @@ while keep_running_program == True:
     elif user_arithmetic_calculation == "clear":
         os.system("clear")
         print(art.logo)
+        print(INITIAL_MESSAGE)
     else:
         calculation_list = user_arithmetic_calculation.split()
         result = calculation(calculation_list)
