@@ -41,4 +41,4 @@ while keep_running_program == True:
     else:
         calculation_list = user_arithmetic_calculation.split()
         result = calculation(calculation_list)
-        print(result)
+        print(f"The result is: {result}")
