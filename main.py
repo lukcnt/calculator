@@ -5,7 +5,12 @@ INITIAL_MESSAGE = ("Welcome to the python calculator, to work properly is needed
                   "typing spaces between numbers and operator. Example: 20 + 15\n"
                   "For more information type 'help'.")
 
-HELP_MESSAGE = ("")
+HELP_MESSAGE = ("\nThe only operations supported at the moment are the following:\n"
+                "-Addition using the symbol '+'\n"
+                "-Subtraction using the symbol '-'\n"
+                "-Multiplication using the letter 'x'\n"
+                "-Division using the symbol '/'\n"
+                "\nLastly, if you want to clean the screen write 'clean'")
 
 def addition(first_number, second_number):
     sum = first_number + second_number
@@ -50,6 +55,8 @@ while keep_running_program == True:
         os.system("clear")
         print(art.logo)
         print(INITIAL_MESSAGE)
+    elif user_arithmetic_calculation == "help":
+        print(HELP_MESSAGE)
     else:
         calculation_list = user_arithmetic_calculation.split()
         result = calculation(calculation_list)
